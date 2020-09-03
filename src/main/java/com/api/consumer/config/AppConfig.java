@@ -12,7 +12,7 @@ public class AppConfig {
 	@Bean
 	public WebClient webClientCampanha(WebClient.Builder builder) {
 		return builder
-				.baseUrl("http://localhost:8080")
+				.baseUrl("https://campanha-api.herokuapp.com")
 				.defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
 				.build();
 	}
@@ -20,7 +20,7 @@ public class AppConfig {
 	@Bean
 	public WebClient webClientSocioTorcedor(WebClient.Builder builder) {
 		return builder
-			.baseUrl("http://localhost:8081")
+			.baseUrl("https://socio-torcedor-api.herokuapp.com")
 			.defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
 			.build();
 	}
